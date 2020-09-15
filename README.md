@@ -1,51 +1,34 @@
-# Desafio QA
+## Ferramentas do Projeto
 
-Este desafio tem o intuito de avaliar suas habilidades na engenharia da qualidade de software.
+Este projeto foi implementado utilizando a linguagem ruby e as seguintes ferramentas:
+- Cucumber
+- Capybara
+- Selenium Webdriver
+- Chromedriver
+- Rspec
 
-## Descrição do projeto
+## Pré-requisitos do projeto
 
-**Material para execução do teste:** http://automationpractice.com/index.php
+- Possuir ruby versão 2.5.1.
 
-Neste [link](http://automationpractice.com/index.php) está uma loja virtual.
+Se possuir `rvm` instalado, colocar no terminal o seguinte comando `rvm install 'ruby-2.5.1'`
 
-Nesta loja virtual, temos diversos produtos, masculino e feminino.
+## Instalacao (linux)
+1. git clone https://github.com/flaviafreitas/desafio-qa.git
+2. Após a clonagem, é necessário acessar a pasta do projeto e rodar `bundle` no terminal.
+3. Ao terminar, é necessário ter baixado o **chromedriver** (https://chromedriver.chromium.org/downloads).
+4. Após o download, descompactar e acessar a pasta onde está o arquivo do chromedrive. No terminal, colocar o seguinte comando: `sudo mv chromedriver /usr/local/bin`
+Obs: Para Mac, rodar o comando: brew cask install chromedriver
 
-Com alguns cliques e alguns preenchimentos, conseguimos realizar fácilmente compras no site.
 
-# Seu desafio deve ter:
+## Rodando o projeto
 
-1. Será necessário criar um login na plataforma
+1. No terminal, acessar a pasta do projeto e executar o comando: cucumber
+2. O teste irá executar dois cenários: um de login e um de compra com sucesso 
+3. Ao final, no próprio terminal, será exibido o resultado do teste (com os cenários que falharam e os que passaram)
 
-2. Navegar pelo menu, selecionar um produto e realizar uma compra na loja virtual
+## Relatório
 
-3. Verificar se o status da compra está correto no histórico da compra.
+Na pasta do projeto, já existem dois relatórios, um em formato .html e outro em .pdf, que mostram toda a execucao do teste.
 
-4. Montar uma suíte de teste e escreva ao menos um teste de End To End e um teste de API.
 
-* Fique a vontade para criar novos casos de teste se preferir.
-
-Ao final o resultado do desafio deve ter:
-
-- Um relatório com todos os bugs encontrado caso haja bug, seguindo uma metodologia de sua preferência
-- Uma suíte de teste com os testes End To End
-- Uma suíte de teste com os testes de API
-- Uma documentação de como executa o ambiente de teste
-- Um Pull Request aberto para [este repositório](https://github.com/Pagnet/desafio-qa), com toda a solução implementada nele
-
-## Instruções de entrega
-
-1. Primeiro, faça um fork deste projeto para sua conta no Github(crie uma conta no Github se você não tiver).
-2. Em seguida, implemente o desafio seguindo as [instruções que estão no capítulo acima](#desafio)
-3. Por fim, envie o link do seu Pull Request, com a resultado do desafio, para o seu contato na BLU.
-
-## Avaliação
-
-Seu teste será avaliado de acordo com os seguintes critérios.
-
-1. Seu teste preenche todos os requerimentos do [desafio proposto aqui](#desafio)?
-2. O projeto esta bem documentado?
-3. Possui uma suíte de teste bem organizada?
-4. Implementou ao menos um teste automatizado?
-5. Gerou um relatório com todos os bugs encontrados, de forma detalhada e de fácil entendimento?
-
-Boa sorte.
